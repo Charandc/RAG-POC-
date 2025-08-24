@@ -1,31 +1,29 @@
-# RAG-POC-
-RAG POC PIPELINE
-# 🚀 AI RAG Search System
+# AI RAG Search System
 
 A modern **Retrieval-Augmented Generation (RAG)** system built with FastAPI and Cohere AI that provides intelligent document search and answer generation.
 
-## ✨ Features
+## Features
 
-- 🔍 **Semantic Search** - Find relevant documents using AI embeddings
-- 🤖 **AI Answer Generation** - Get intelligent responses using Cohere's language models
-- 📊 **Document Reranking** - Advanced relevance scoring for better results
-- 🎨 **Futuristic UI** - Modern dark theme with animations and gradients
-- ⚡ **Fast Performance** - Cached embeddings and optimized retrieval
-- 📱 **Responsive Design** - Works on desktop and mobile devices
+- **Semantic Search** - Find relevant documents using AI embeddings
+- **AI Answer Generation** - Get intelligent responses using Cohere's language models
+- **Document Reranking** - Advanced relevance scoring for better results
+- **Futuristic UI** - Modern dark theme with animations and gradients
+- **Fast Performance** - Cached embeddings and optimized retrieval
+- **Responsive Design** - Works on desktop and mobile devices
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: FastAPI, Python
 - **AI Models**: Cohere API, SentenceTransformers
 - **Frontend**: HTML, CSS, JavaScript
 - **Data**: NumPy, JSON
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8+
 - Cohere API Key (free at [cohere.ai](https://cohere.ai))
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone & Navigate
 ```bash
@@ -51,7 +49,7 @@ python main.py
 ### 5. Open Your Browser
 Visit: `http://localhost:8002`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 RAG/
@@ -64,7 +62,7 @@ RAG/
 └── README.md           # This file
 ```
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### Search Documents
 ```http
@@ -82,7 +80,7 @@ Content-Type: application/json
 GET /health
 ```
 
-## 💡 Usage Examples
+## Usage Examples
 
 Try these queries:
 - "What is the capital of France?"
@@ -90,19 +88,19 @@ Try these queries:
 - "Which cities are on rivers?"
 - "What museums are in Amsterdam?"
 
-## 🎯 How It Works
+## How It Works
 
 1. **Retrieval**: Converts your query to embeddings and finds similar documents
 2. **Augmentation**: Reranks documents using Cohere's reranking model
 3. **Generation**: Creates intelligent answers using retrieved context
 
-## 🔄 System Flow
+## System Flow
 
 ```
 User Query → Embedding → Similarity Search → Reranking → AI Generation → Response
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Modify Search Parameters
 Edit in `main.py`:
@@ -115,7 +113,7 @@ max_tokens=200                                     # Change answer length
 ### Add Your Own Documents
 Replace content in `chunks.json` with your own text chunks, then delete `embeddings.npy` to regenerate embeddings.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues:
 
@@ -135,13 +133,13 @@ pip install --upgrade pip
 pip install -r requirements.txt  # If you create one
 ```
 
-## 📊 Performance
+## Performance
 
 - **First run**: ~10-15 seconds (downloads model + generates embeddings)
 - **Subsequent runs**: ~2-3 seconds per query
 - **Memory usage**: ~500MB (model + embeddings)
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Document upload functionality
 - [ ] Multiple file format support (PDF, DOCX)
@@ -149,11 +147,11 @@ pip install -r requirements.txt  # If you create one
 - [ ] Chat history
 - [ ] Advanced filtering options
 
-## 📄 License
+## License
 
 MIT License - Feel free to use and modify!
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch
